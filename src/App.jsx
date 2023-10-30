@@ -53,7 +53,7 @@ const App = () => {
 	};
 
 				const onSendData = useCallback(() => {
-						const queryID = telegram.initDataUnSafe?.query_id;
+						const queryID = telegram.initDataUnsafe?.query_id;
 
 						if(queryID){
 								fetch('https://localhost:800/web-data',{
