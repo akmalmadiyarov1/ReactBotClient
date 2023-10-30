@@ -64,7 +64,7 @@
     margin-bottom: 10px;
 }
 
-.btn-container{
+.btn__container{
      display: flex;
      flex-direction: row;
      justify-content: center;
