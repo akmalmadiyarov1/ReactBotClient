@@ -44,6 +44,7 @@ function App() {
     telegram.MainButton.text = "Sotib olish :)";
     telegram.MainButton.show();
   };
+  onCheckout()
 
   return (
     <div>
