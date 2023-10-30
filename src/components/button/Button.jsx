@@ -1,14 +1,18 @@
 import "./button.css";
 
-const Button = (props) => {
-  const { type, title,onClick,disable } = props;
+const Button = ({ type, title, onClick, disable }) => {
+  const buttonClass =
+    type === "add"
+      ? "add"
+      : type === "remove"
+      ? "remove"
+      : type === "checkout"
+      ? "checkout"
+      : "";
+
   return (
     <button
-      className={`btn ${
-        (type === "add" && "add") ||
-        (type === "remove" && "remove") ||
-        (type === "checkout" && "checkout") 
-      } ${disable === true && 'disabled'}`}
+      className={`btn ${buttonClass} ${disable && 'disabled'}`}
       onClick={onClick}
       disabled={disable}
     >
