@@ -1,4 +1,4 @@
-import { totalPrice } from '../../units/total-price';
+import { totalPrice } from '../units/total-price';
 import Button from '../button/Button';
 import './cart.css';
 
